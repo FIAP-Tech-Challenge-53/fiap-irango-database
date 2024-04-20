@@ -19,6 +19,14 @@ variable "db_name" {
   default = "irango"
 }
 
+variable "cache_engine" {
+  default = "redis"
+}
+
+variable "cache_node_type" {
+  default = "cache.t3.micro"
+}
+
 # Secrets
 variable "db_user" {
   type = string

@@ -30,8 +30,8 @@ resource "aws_elasticache_subnet_group" "default" {
 
 resource "aws_elasticache_cluster" "default" {
   cluster_id        = "${data.terraform_remote_state.infra.outputs.resource_prefix}-cache"
-  engine            = "redis"
-  node_type         = "cache.t3.micro"
+  engine            = var.cache_engine
+  node_type         = var.cache_node_type
   num_cache_nodes   = 1
   port              = 6379
   apply_immediately = true
