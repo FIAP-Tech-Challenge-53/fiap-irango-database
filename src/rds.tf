@@ -55,6 +55,10 @@ resource "aws_db_instance" "default" {
   }
 }
 
+output "aws_db_instance_host" {
+  value = aws_db_instance.default.address
+}
+
 output "aws_db_instance_endpoint" {
   value = aws_db_instance.default.endpoint
 }

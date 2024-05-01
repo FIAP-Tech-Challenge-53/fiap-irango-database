@@ -35,3 +35,8 @@ variable "db_user" {
 variable "db_password" {
   type = string
 }
+
+# Outputs for variables
+output "db_name" {
+  value = var.db_name
+}
