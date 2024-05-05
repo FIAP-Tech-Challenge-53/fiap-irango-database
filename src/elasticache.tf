@@ -1,6 +1,6 @@
 resource "aws_security_group" "cache" {
   name        = "${data.terraform_remote_state.infra.outputs.resource_prefix}-security-group-cache"
-  description = "inbound: TCP/6379"
+  description = "inbound: TCP/6379 + outbound: none"
   vpc_id      = data.terraform_remote_state.infra.outputs.aws_vpc_id
 
   ingress {

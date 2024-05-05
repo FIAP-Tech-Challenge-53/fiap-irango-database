@@ -8,6 +8,7 @@ resource "aws_security_group" "rds" {
     from_port   = 3306
     to_port     = 3306
     protocol    = "TCP"
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   tags = {
@@ -53,10 +54,6 @@ resource "aws_db_instance" "default" {
   tags = {
     Name = "${data.terraform_remote_state.infra.outputs.resource_prefix}-rds"
   }
-}
-
-output "aws_db_instance_host" {
-  value = aws_db_instance.default.address
 }
 
 output "aws_db_instance_endpoint" {
