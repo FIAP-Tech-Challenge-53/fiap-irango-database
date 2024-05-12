@@ -28,11 +28,11 @@ variable "cache_node_type" {
 }
 
 # Secrets
-variable "db_user" {
+variable "DB_USERNAME" {
   type = string
 }
 
-variable "db_password" {
+variable "DB_PASSWORD" {
   type = string
 }
 
