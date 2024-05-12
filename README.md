@@ -1,7 +1,7 @@
 # Fiap iRango Database
 ![terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
 ![aws](https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
-![rds](https://img.shields.io/badge/Amazon_RDS-2d71b8?style=for-the-badge&logo=amazonrds&logoColor=white)
+![rds](https://img.shields.io/badge/Amazon_RDS-3b48cb?style=for-the-badge&logo=amazonrds&logoColor=white)
 ![mysql](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=FFF&style=flat-square)
 ![redis](https://img.shields.io/badge/Redis-DC382D?logo=Redis&logoColor=FFF&style=flat-square)
 
