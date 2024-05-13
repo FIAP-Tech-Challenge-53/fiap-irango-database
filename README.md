@@ -5,6 +5,9 @@
 ![mysql](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=FFF&style=flat-square)
 ![redis](https://img.shields.io/badge/Redis-DC382D?logo=Redis&logoColor=FFF&style=flat-square)
 
+## Architecture Diagram:
+![Architecture diagram](./docs/fiap-irango-database.png)
+
 ## Dependencies
 - [Terraform](https://developer.hashicorp.com/terraform/install?product_intent=terraform)
 - Make
