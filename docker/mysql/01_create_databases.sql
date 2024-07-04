@@ -1,0 +1,3 @@
+CREATE DATABASE IF NOT EXISTS `irango_order`;
+CREATE DATABASE IF NOT EXISTS `irango_payment`;
+CREATE DATABASE IF NOT EXISTS `irango_cook`;

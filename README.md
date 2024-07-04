@@ -28,6 +28,14 @@ export TF_VAR_DB_PASSWORD=password
 ```
 Or configure it in windows environments.
 
+### Run databases locally
+```bash
+make db-up
+
+# or without make
+docker-compose up -d
+```
+
 ### Using make
 ```bash
 # To init terraform
