@@ -52,6 +52,20 @@ services:
       - 6379:6379
     volumes:
       - redis-volume:/data
+  
+  local-mongo:
+    image: mongo:7.0.2
+    container_name: local-mongo
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=password
+      - MONGO_INITDB_DATABASE=irango_cook
+    volumes:
+      - mongo-volume:/data/db
+    networks:
+      - local-network
+    ports:
+      - "27017:27017"
 
 networks:
   local-network:
@@ -61,3 +75,4 @@ networks:
 volumes:
   mysql-volume: {}
   redis-volume: {}
+  mongo-volume: {}

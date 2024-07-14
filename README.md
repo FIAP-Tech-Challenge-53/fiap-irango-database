@@ -4,6 +4,7 @@
 ![rds](https://img.shields.io/badge/Amazon_RDS-3b48cb?style=for-the-badge&logo=amazonrds&logoColor=white)
 ![mysql](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=FFF&style=flat-square)
 ![redis](https://img.shields.io/badge/Redis-DC382D?logo=Redis&logoColor=FFF&style=flat-square)
+![mongodb](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=FFF&style=flat-square)
 
 ## Architecture Diagram:
 ![Architecture diagram](./docs/fiap-irango-database.png)
@@ -25,6 +26,8 @@ export AWS_ACCESS_KEY_ID=xxxxxx
 export AWS_SECRET_ACCESS_KEY=xxxxxx
 export TF_VAR_DB_USERNAME=root
 export TF_VAR_DB_PASSWORD=password
+export MONGODB_ATLAS_PUBLIC_KEY=xxxxxx
+export MONGODB_ATLAS_PRIVATE_KEY=xxxxxx
 ```
 Or configure it in windows environments.
 
