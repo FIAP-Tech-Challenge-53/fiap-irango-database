@@ -39,7 +39,9 @@ make db-up
 docker-compose up -d
 ```
 
-### Using make
+### Using Terraform
+
+#### With make
 ```bash
 # To init terraform
 make init
@@ -56,8 +58,7 @@ To destroy resources:
 make down
 ```
 
-
-### Without make
+#### Without make
 ```bash
 # To init terraform
 terraform -chdir=terraform init
