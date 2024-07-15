@@ -27,6 +27,30 @@ variable "cache_node_type" {
   default = "cache.t3.micro"
 }
 
+variable "mongo_atlas_project_name" {
+  type        = string
+  default     = "FIAP iRango"
+}
+
+variable "mongo_db_name" {
+  default = "irango_cook"
+}
+
+variable "mongo_cluster_instance_size_name" {
+  type        = string
+  default     = "M0"
+}
+
+variable "mongo_atlas_region" {
+  type        = string
+  default     = "US_EAST_1"
+}
+
+variable "mongo_version" {
+  type        = string
+  default     = "7.0"
+}
+
 # Secrets
 variable "DB_USERNAME" {
   type = string
@@ -34,6 +58,18 @@ variable "DB_USERNAME" {
 
 variable "DB_PASSWORD" {
   type = string
+}
+
+variable "MONGO_USERNAME" {
+  type = string
+}
+
+variable "MONGO_PASSWORD" {
+  type = string
+}
+
+variable "MONGO_ATLAS_ORG_ID" {
+  type        = string
 }
 
 # Outputs for variables
