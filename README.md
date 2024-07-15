@@ -24,10 +24,13 @@ Before all, you need set AWS credentials and Database ENVs using:
 ```bash
 export AWS_ACCESS_KEY_ID=xxxxxx
 export AWS_SECRET_ACCESS_KEY=xxxxxx
-export TF_VAR_DB_USERNAME=root
-export TF_VAR_DB_PASSWORD=password
 export MONGODB_ATLAS_PUBLIC_KEY=xxxxxx
 export MONGODB_ATLAS_PRIVATE_KEY=xxxxxx
+
+export TF_VAR_DB_USERNAME=root
+export TF_VAR_DB_PASSWORD=password
+export TF_VAR_MONGO_USERNAME=root
+export TF_VAR_MONGO_PASSWORD=password
 ```
 Or configure it in windows environments.
 
