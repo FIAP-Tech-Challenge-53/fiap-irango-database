@@ -28,8 +28,8 @@ variable "cache_node_type" {
 }
 
 variable "mongo_atlas_project_name" {
-  type        = string
-  default     = "FIAP iRango"
+  type    = string
+  default = "FIAP iRango"
 }
 
 variable "mongo_db_name" {
@@ -37,18 +37,18 @@ variable "mongo_db_name" {
 }
 
 variable "mongo_cluster_instance_size_name" {
-  type        = string
-  default     = "M0"
+  type    = string
+  default = "M0"
 }
 
 variable "mongo_atlas_region" {
-  type        = string
-  default     = "US_EAST_1"
+  type    = string
+  default = "US_EAST_1"
 }
 
 variable "mongo_version" {
-  type        = string
-  default     = "7.0"
+  type    = string
+  default = "7.0"
 }
 
 # Secrets
@@ -69,7 +69,7 @@ variable "MONGO_PASSWORD" {
 }
 
 variable "MONGO_ATLAS_ORG_ID" {
-  type        = string
+  type = string
 }
 
 # Outputs for variables

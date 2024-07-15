@@ -57,4 +57,7 @@ jobs:
         run: terraform validate
 
       - name: Terraform Apply
+        env:
+          MONGODB_ATLAS_PUBLIC_KEY: ${{ secrets.MONGODB_ATLAS_PUBLIC_KEY }}
+          MONGODB_ATLAS_PRIVATE_KEY: ${{ secrets.MONGODB_ATLAS_PRIVATE_KEY }}
         run: terraform apply -auto-approve -input=false
