@@ -19,6 +19,10 @@ variable "db_name" {
   default = "irango"
 }
 
+variable "db_name_payment" {
+  default = "irango_payment"
+}
+
 variable "cache_engine" {
   default = "redis"
 }
