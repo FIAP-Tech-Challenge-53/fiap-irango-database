@@ -24,7 +24,10 @@ add-network:
 	fi
 
 init:
-	terraform -chdir=terraform init
+	terraform -chdir=terraform init -migrate-state
+
+init-reconfigure:
+	terraform -chdir=terraform init -reconfigure
 
 plan:
 	terraform -chdir=terraform plan
